@@ -1,0 +1,55 @@
+.global__box {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content__menu {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/* ESTILIZAÇÃO DO BANNER/CALL-TO-ACTION */
+.action__section {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.action__section .box__section {
+	/*height: 240px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.section__title {
+	font-size: 70px;
+	line-height: 75px;
+	text-align: center;
+	font-family: BebasNeue;
+}
+
+.section__link {
+	width: 200px;
+	height: 60px;
+	font-size: 16px;
+	line-height: 52px;
+	text-align: center;
+	border: 4px solid var(--cor-secundaria);
+	border-radius: 8px;
+	margin-top: 30px;
+}
+
+.section__link:hover {
+	background: var(--cor-secundaria);
+	color: var(--cor-primaria);
+}
+
+.section__title,
+.section__link {
+	color: var(--cor-secundaria);
+}

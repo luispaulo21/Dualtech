@@ -1,0 +1,118 @@
+/* FONTES EXTERNAS */
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas_neue/BebasNeue-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'DancingScript';
+	src: url('../fonts/dancing_Script/DancingScript.woff') format('woff');
+}
+
+/* ESTILOS GERAIS */
+
+:root {
+	--cor-primaria: #EFB113;
+	--cor-secundaria: #30364A;
+	--cor-terciaria: #FDFDED;
+}
+
+body {
+	font-family: "Lato";
+	background: var(--cor-primaria);
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* ESTILIZAÇÃO DO HEADER */
+.main__header {
+	padding-top: 40px;
+}
+
+.header__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;	
+}
+
+.items__path {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.items__path span{
+	margin: 0;
+}
+
+.items__path::before {
+	content:" ";
+	display: block;
+	width: 70px;
+	height: 1px;
+	margin-right: 5px;
+	background: var(--cor-secundaria);
+}
+
+.items__logo a {
+	font-size: 22px;
+	line-height: 30px;
+	color: var(--cor-secundaria);	
+}
+
+.items__path,
+.items__logo a {
+	color: var(--cor-secundaria);
+}
+
+/* ESTILIZAÇÃO DO MENU LATERAL (PRINCIPAL) */
+.main__menu {
+	display: flex;
+	align-items: center;
+}
+
+.main__menu .menu__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__menu .items__item {
+	margin: 25px 0;
+}
+
+.main__menu .items__item a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 2px solid var(--cor-secundaria);
+}
+
+.main__menu .item--ativo {
+	border: none;
+	background: var(--cor-secundaria);
+}
+
+.main__menu .items__back a,
+.main__menu .items__next a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background: var(--cor-secundaria);
+	
+}

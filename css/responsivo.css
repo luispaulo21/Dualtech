@@ -1,0 +1,74 @@
+/* INÍCIO DO RESPONSIVO PARA TABLET */
+@media only screen and (max-width: 960px) and (min-width: 840px) {
+	.action__section  {
+		margin-left: none;
+	}
+	.section__title,
+	.services__section .services__title,
+	.box__contact .contact__title
+	 {
+		font-size: 56px;
+		line-height: 60px;
+	}
+
+	.section__link  {
+		width: 160px;
+	}
+
+	.services__section .box__section--ativo {
+		left: -500px;
+	}
+
+	@keyframes animT {
+		from {
+			left: -20px;
+			opacity: 0;
+		}
+		to {
+			left: 0px;
+			opacity: 1;
+		}
+	}
+
+	.contact__information .information__item:nth-child(1) {
+		background: url("../img/bg-tablet-contato-whatsapp.svg") no-repeat center;
+	}
+
+	.contact__information .information__item:nth-child(2) {
+		background: url("../img/bg-tablet-contato-email.svg") no-repeat center;
+	}
+
+}
+/* FIM DO RESPONSIVO PARA TABLET */
+
+/* BREAKPOINT MÉDIO */
+@media only screen and (max-width: 839px) and (min-width: 685px) {
+	.header__items {
+		justify-content: flex-start;
+	}
+
+	.content__menu {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.main__menu {
+		margin-top: 60px;
+		justify-content: center;
+	}
+
+	.main__menu .menu__items { 
+		flex-direction: row;
+	}
+
+	.main__menu .items__item { 
+		margin: 0 25px;
+	}
+
+	.items__back,
+	.items__next {
+		transform: rotate(-90deg);
+	}
+}
+
+/* FIM DO BREAKPOINT MÉDIO */

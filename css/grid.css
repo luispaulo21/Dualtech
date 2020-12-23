@@ -1,0 +1,297 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.container:before,
+.container:after {
+	content:" ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-p,
+.grid-nav
+		{
+	float: left;
+	margin: 0 20px;
+}
+
+.grid-1 {
+	width: 20px;
+}
+
+.grid-2 {
+	width: 80px;
+
+}
+
+.grid-3 {
+	width: 140px;
+}
+
+.grid-4 {
+	width: 200px;
+}
+
+.grid-5 {
+	width: 260px;
+}
+
+.grid-6 {
+	width: 320px;
+}
+
+.grid-7 {
+	width: 380px;
+}
+
+.grid-8 {
+	width: 440px;
+}
+
+.grid-9 {
+	width: 480px;
+}
+
+.grid-10 {
+	width: 560px;
+}
+
+.grid-11 {
+	width: 620px;
+}
+
+.grid-12 {
+	width: 680px;
+}
+
+.grid-13 {
+	width: 740px;
+}
+
+.grid-14 {
+	width: 800px;
+}
+
+.grid-15 {
+	width: 860px;
+}
+
+.grid-16 {
+	width: 920px;
+}
+
+.grid-p {
+	width: 100px;
+}
+
+.grid-nav {
+	width: 30px;
+}
+
+/* INÍCIO DO RESPONSIVO PARA TABLET */
+@media only screen and (max-width: 960px) and (min-width: 840px) {
+	.container {
+		/*background: red;*/
+		width: 800px;
+	}
+
+	.grid-3 {
+		width: 70px;
+	}
+
+	.grid-5 {
+		width: 170px
+	}
+
+	.grid-7 {
+		width: 310px;
+	}
+
+	.grid-8 {
+		width: 350px;
+	}
+
+	.grid-9 {
+		width: 420px;
+	}
+
+	.grid-10 {
+		width: 520px;
+	}
+
+	.grid-12 {
+		width: 730px;
+	}
+
+	.grid-14 {
+		width: 660px;
+	}
+
+	.grid-15 {
+		width: 730px;
+	}
+
+	.grid-16 {
+		width: 100%;
+	}
+
+	.main__menu {
+		/*background: green;*/
+		margin: 0;
+	}
+
+}
+/* FIM DO RESPONSIVO PARA TABLET */	
+
+/* BREAKPOINT MÉDIO */
+@media only screen and (max-width: 839px) and (min-width: 685px) {
+	.container {
+		/*background: red;*/
+		width: 650px;
+	}
+
+	.container:before,
+	.container:after {
+		content:" ";
+		display: table;
+	}
+
+	.container:after {
+		clear: both;
+	}
+
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12,
+	.grid-13,
+	.grid-14,
+	.grid-15,
+	.grid-16,
+	.grid-p,
+	.grid-nav
+			{
+		float: left;
+		margin: 0 20px;
+	}
+
+	.grid-1 {
+		width: 20px;
+	}
+
+	.grid-2 {
+		width: 80px;
+
+	}
+
+	.grid-3 {
+		/*width: 100%;*/
+	}
+
+	.grid-4 {
+		width: 200px;
+	}
+
+	.grid-5 {
+		/*width: ;*/
+	}
+
+	.grid-6 {
+		width: 320px;
+	}
+
+	.grid-7 {
+		width: 310px;
+	}
+
+	.grid-8 {
+		width: 350px;
+	}
+
+	.grid-9 {
+		display: 225px;
+	}
+
+	.grid-10 {
+		width: 520px;
+	}
+
+	.grid-11 {
+		width: 620px;
+	}
+
+	.grid-12 {
+		width: 730px;
+	}
+
+	.grid-13 {
+		width: 740px;
+	}
+
+	.grid-14 {
+		width: 100%;
+	}
+
+	.grid-15 {
+		width: 100%;
+	}
+
+	.grid-16 {
+		width: 100%;
+	}
+
+	.grid-p {
+		width: 100px;
+	}
+
+	.grid-nav {
+		width: 100%;
+	}
+
+	.main__menu {
+		/*background: green;*/
+		margin: 0;
+	}
+
+}
+/* FIM DO BREAKPOINT MÉDIO */	
