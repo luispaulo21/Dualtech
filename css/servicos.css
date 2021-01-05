@@ -1,20 +1,9 @@
-.global__box {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-.content__menu {
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
 body::before {
 	content:"";
+	position: absolute;
 	width: 100%;
 	height: 100vh;
-	position: absolute;
+	z-index: -999;
 	background: url('../img/bg-servicos.svg') no-repeat center center;
 }
 
@@ -30,22 +19,14 @@ body::before {
 	overflow: hidden;
 }
 
-.services__section .box__section {
-	position: relative;
-	margin-right: 20px;
-	/*background: var(--cor-secundaria);*/
-}
-
 .services__section .box__section--inactive {
 	display: none;
 }
 
 .services__section .services__title {
 	position: relative;
-	font-size: 70px;
-	line-height: 75px;
-	font-family: BebasNeue;
 	color: var(--cor-primaria);
+	text-align: left;
 }
 
 .services__section .services__description {
@@ -125,26 +106,4 @@ body::before {
 	border: none;
 	margin: 0;
 	background: red;
-}
-
-
-/* ESTILIZAÇÃO DO MENU LATERAL (PRINCIPAL) EXCLUSIVO DA PÁGINA DE
-   SERVIÇOS 
-*/
-.main__menu {
-	justify-content: flex-end;
-}
-
-.main__menu nav {
-	margin-right: 0;
-}
-
-.main__menu .items__item a {
-	border-color: var(--cor-primaria);
-}
-
-.main__menu .items__back a,
-.main__menu .items__next a,
-.main__menu .item--ativo {
-	background: var(--cor-primaria);
 }

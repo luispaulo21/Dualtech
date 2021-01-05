@@ -15,7 +15,6 @@
 }
 
 /* ESTILOS GERAIS */
-
 :root {
 	--cor-primaria: #EFB113;
 	--cor-secundaria: #30364A;
@@ -31,6 +30,28 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+
+.global__box {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content__menu {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.section__title,
+.services__section .services__title,
+.box__contact .contact__title {
+	font-size: 70px;
+	line-height: 75px;
+	text-align: center;
+	font-family: BebasNeue;
+}
+
 
 /* ESTILIZAÇÃO DO HEADER */
 .main__header {
@@ -105,14 +126,27 @@ a {
 	background: var(--cor-secundaria);
 }
 
-.main__menu .items__back a,
-.main__menu .items__next a {
+.main__menu .items__back,
+.main__menu .items__next {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: var(--cor-secundaria);
+	
+}
+.main__menu .items__back,
+.main__menu .items__next,
+.main__menu .items__next a,
+.main__menu .items__back a {
 	width: 30px;
 	height: 30px;
 	border-radius: 30px;
-	background: var(--cor-secundaria);
-	
+}
+
+.main__menu .items__next a {
+	background: url("../img/next-orange.svg") no-repeat center center;
+}
+
+.main__menu .items__back a {
+	background: url("../img/back-orange.svg") no-repeat center center;
 }

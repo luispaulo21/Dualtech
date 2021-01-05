@@ -1,8 +1,15 @@
-/* INÍCIO DO RESPONSIVO PARA TABLET */
+ INÍCIO DO RESPONSIVO PARA TABLET */
 @media only screen and (max-width: 960px) and (min-width: 840px) {
 	.action__section  {
-		margin-left: none;
+		margin-left: 0;
 	}
+
+	.action__section .box__section,
+	.contact__section .box__contact {
+		float: right;
+		margin: 0;
+	}
+
 	.section__title,
 	.services__section .services__title,
 	.box__contact .contact__title
@@ -17,6 +24,10 @@
 
 	.services__section .box__section--ativo {
 		left: -500px;
+	}
+
+	.main__menu {
+		margin-left: 20px;
 	}
 
 	@keyframes animT {
@@ -41,6 +52,7 @@
 }
 /* FIM DO RESPONSIVO PARA TABLET */
 
+
 /* BREAKPOINT MÉDIO */
 @media only screen and (max-width: 839px) and (min-width: 685px) {
 	.header__items {
@@ -52,9 +64,25 @@
 		flex-direction: column;
 	}
 
+	.items__path {
+		justify-content: flex-start;
+		margin-left: 0;
+	}
+
+	.section__title,
+	.services__section .services__title,
+	.box__contact .contact__title {
+		font-size: 50px;
+		line-height: 62px;
+	}
+
 	.main__menu {
 		margin-top: 60px;
 		justify-content: center;
+	}
+
+	.services__section {
+		padding-top: 75px;
 	}
 
 	.main__menu .menu__items { 
@@ -69,6 +97,193 @@
 	.items__next {
 		transform: rotate(-90deg);
 	}
-}
 
+	.main__menu .items__back,
+	.main__menu .items__next,
+	.main__menu .item--ativo  {
+		background: var(--cor-secundaria) !important;
+	}
+
+	.main__menu .items__next a {
+		background: url("../img/next-orange.svg") no-repeat center center !important;
+	}
+
+	.main__menu .items__back a {
+		background: url("../img/back-orange.svg") no-repeat center center !important;
+	}
+
+
+	.main__menu .items__item a {
+		border-color: var(--cor-secundaria) !important;
+	}
+
+	.contact__information .item__title,
+	.contact__information .item__link {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.contact__information .information__item:nth-child(1) {
+		background: url("../img/bg-tablet-contato-whatsapp.svg") no-repeat center;
+		margin-right: 10px;
+	}
+
+	.contact__information .information__item:nth-child(2) {
+		background: url("../img/bg-tablet-contato-email.svg") no-repeat center;
+		margin-left: 10px;
+	}
+}
 /* FIM DO BREAKPOINT MÉDIO */
+
+
+/* IŃÍCIO DO RESPONSIVO PARA MOBILE */
+@media only screen and (max-width: 684px) {
+	body::before {
+		background: url('../img/bg-servicos-mobile.svg') no-repeat center 90%;
+		background-size: 1200px;
+	}
+	/*CABEÇALHO*/
+	.header__items {
+		flex-wrap: wrap;
+	}
+
+	.items__path {
+		justify-content: flex-start;
+	}
+
+	.items__logo {
+		text-align: center;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.items__logo a {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	/*FIM CABEÇALHO*/
+
+	/*REPONSIVO DA PÁGINA HOME*/
+	.action__section .box__section {
+		padding-top: 70px;
+	}
+
+	.section__title,
+	.services__section .services__title,
+	.box__contact .contact__title {
+		font-size: 26px;
+		line-height: 35px;
+	}
+
+	.section__link {
+		width: 150px;
+		height: 50px;
+		font-size: 14px;
+		line-height: 40px;
+		margin-top: 15px;
+	}
+	/*FIM DO REPONSIVO DA PÁGINA HOME*/
+
+
+	/*REPONSIVO DA PÁGINA DE SERVIÇOS*/
+	.content__menu {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.services__section {
+		justify-content: flex-start;
+	}
+
+	.box__section {
+		position: relative;
+		width: 100%;
+		height: 360px;
+		/*background: blue;*/
+	}
+
+	.services__section .services__description {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.services__section .services__menu {
+		position: absolute;
+		right: 0;
+		top: 5px;
+		margin: 0;
+	}
+
+	.main__menu {
+		justify-content: center !important;
+	}
+
+
+	.main__menu .menu__items {
+		flex-direction: row;
+	}
+
+	.main__menu .items__item {
+		margin: 0 20px;
+	}
+
+	.main__menu .items__back a,
+	.main__menu .items__next a {
+		transform: rotate(-90deg);
+	}
+
+	.main__menu .items__back,
+	.main__menu .items__next,
+	.main__menu .item--ativo  {
+		background: var(--cor-secundaria) !important;
+	}
+
+	.main__menu .items__next a {
+		background: url("../img/next-orange.svg") no-repeat center center !important;
+	}
+
+	.main__menu .items__back a {
+		background: url("../img/back-orange.svg") no-repeat center center !important;
+	}
+
+
+	.main__menu .items__item a {
+		border-color: var(--cor-secundaria) !important;
+	}
+	/*FIM DO REPONSIVO DA PÁGINA DE SERVIÇOS*/
+
+	/*REPONSIVO DA PÁGINA DE CONTATO*/
+	.contact__information {
+		margin: 0;
+		flex-direction: column;
+		padding: 10px 0;
+	}
+
+	.information__item {
+		height: 134px;
+		padding: 10px 0 0 0;
+	}
+
+	.contact__information .information__item:nth-child(1),
+	.contact__information .information__item:nth-child(2) {
+		padding: 20px 0 0 20px;
+		margin: 0;
+	}
+
+	.contact__information .information__item:nth-child(1) {
+		background: url("../img/bg-mobile-contato-whatsapp.svg") no-repeat center;
+	}
+
+	.contact__information .information__item:nth-child(2) {
+		background: url("../img/bg-mobile-contato-email.svg") no-repeat center;
+	}
+
+
+	.contact__information .item__link {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	/*FIM DO REPONSIVO DA PÁGINA DE SERVIÇOS*/
+}
+/* FIM DO RESPONSIVO PARA MOBILE 

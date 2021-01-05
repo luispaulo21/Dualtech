@@ -233,7 +233,7 @@
 	}
 
 	.grid-5 {
-		/*width: ;*/
+		width: 245px;
 	}
 
 	.grid-6 {
@@ -254,6 +254,7 @@
 
 	.grid-10 {
 		width: 520px;
+		margin: 0;
 	}
 
 	.grid-11 {
@@ -268,24 +269,16 @@
 		width: 740px;
 	}
 
-	.grid-14 {
+	.grid-14,
+	.grid-15,
+	.grid-16,
+	.grid-nav {
 		width: 100%;
-	}
-
-	.grid-15 {
-		width: 100%;
-	}
-
-	.grid-16 {
-		width: 100%;
+		margin: 0;
 	}
 
 	.grid-p {
 		width: 100px;
-	}
-
-	.grid-nav {
-		width: 100%;
 	}
 
 	.main__menu {
@@ -295,3 +288,52 @@
 
 }
 /* FIM DO BREAKPOINT MÉDIO */	
+
+/* IŃÍCIO DO RESPONSIVO PARA MOBILE */
+@media only screen and (max-width: 684px) {
+	.container {
+		/*background: red;*/
+		width: 316px;
+	}
+
+	.grid-4,
+	.grid-5,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-nav {
+		margin: 0;
+	}
+
+	.grid-7 {
+		width: 293px;
+	}
+
+	.grid-8 {
+		width: 185px;
+	}
+
+	.grid-9 {
+		width: 314px;
+	}
+
+	.grid-10 {
+		width: 314px;
+	}
+
+	.grid-4,
+	.grid-12,
+	.grid-14,
+	.grid-15,
+	.grid-16 {
+		width: 100%;
+		margin: 0;
+	}
+
+	.grid-nav {
+		width: auto;
+	}
+
+
+}
+/* FIM DO RESPONSIVO PARA MOBILE */
